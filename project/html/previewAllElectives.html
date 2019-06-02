@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/previewAllElectives.css">
+    <link rel="stylesheet" type="text/css" href="../css/electivesManagerHeader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/avatar2.jpg" />
+    <script type="text/javascript" src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/previewAllElectives.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Electives Manager</h1>
+        <button class="logoutButton" onclick="logout()">Logout</button>
+    </header>
+
+    <nav>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="addElective.html">Add</a>
+            <a href="previewAllElectives.html">Preview</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="buttons">
+            <button class="previewAllButton" onclick="getAllElectives()">Preview all electives</button>
+            <button class="previewMyButton" onclick="getMyElectives()">Preview my electives</button>
+        </div>
+
+        <span id="errors" class="errors"></span>
+                <br>
+
+        <article id="tableContainer">
+
+        </article>
+
+        <br>
+    </section>
+
+</body>
+
+</html>

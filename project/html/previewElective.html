@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electives Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/previewElective.css">
+    <link rel="stylesheet" type="text/css" href="../css/electivesManagerHeader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/avatar2.jpg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/previewElective.js"></script>
+</head>
+
+<body onload="getOneElective()">
+
+    <header>
+        <h1>Electives Manager</h1>
+        <button class="logoutButton" onclick="logout()">Logout</button>
+    </header>
+
+    <nav>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="addElective.html">Add</a>
+            <a href="previewAllElectives.html">Preview</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Preview elective</h2>
+       
+        <article id="tableContainer">
+
+        </article>
+
+        <br>
+        <span id="errors" class="errors"></span>
+        <div id="outer">
+            <div class="inner">
+                <button class="but" onclick="deleteElective()">Delete</button>
+            </div>
+            <div class="inner">
+                <button class="but" onclick="modifyElective()">Modify</button>
+            </div>
+            <div class="inner">
+                <button class="but" onclick="exportElective()">Export to PDF</button>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

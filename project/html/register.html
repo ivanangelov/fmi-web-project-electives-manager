@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/loginAncestor.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/avatar2.jpg" />
+    <script type="text/javascript" src="../js/register.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section class="wrapper">
+        <header>
+            <h1>Electives manager platform</h1>
+
+        </header>
+
+        <form>
+            <h2>Register</h2>
+            <div class="imgcontainer">
+                <img src="../img/avatar2.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="pswRepeat"><b>Repeat password</b></label>
+                <input id="pswRepeat" type="password" placeholder="Repeat Password" name="pswRepeat" required>
+
+                <label for="email"><b>Email</b></label>
+                <input id="email" type="email" placeholder="Enter Email" name="email" required>
+
+                <span id="errors" class="errors"></span>
+
+                <button type="submit">Register</button>
+            </div>
+
+            <div id="bottomContainer" class="bottomContainer">
+                <a class="registerButton" href="login.html">Login</a>
+            </div>
+        </form>
+    </section>
+</body>

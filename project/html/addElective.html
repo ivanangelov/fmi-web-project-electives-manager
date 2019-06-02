@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electives Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/addElective.css">
+    <link rel="stylesheet" type="text/css" href="../css/addElectiveForm.css">
+    <link rel="stylesheet" type="text/css" href="../css/electivesManagerHeader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/avatar2.jpg" />
+    <script type="text/javascript" src="../js/addElective.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Electives Manager</h1>
+        <button class="logoutButton" onclick="logout()">Logout</button>
+    </header>
+
+    <nav>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="addElective.html">Add</a>
+            <a href="previewAllElectives.html">Preview</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <section>
+        <form>
+            <h2>Add elective course</h2>
+
+            <article class="container">
+                <span id="errors" class="errors"></span>
+                <br>
+
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter name" name="name" required>
+
+                <label for="lecturer">Lecturer</label>
+                <input id="lecturer" type="text" placeholder="Enter lecturer" name="lecturer" required>
+
+                <label for="assistant">Assistant</label>
+                <input id="assistant" type="text" placeholder="Enter assistant" name="assistant">
+
+                <label for="busyness">Busyness(in hours)</label>
+                <input id="busyness" type="number" placeholder="Enter busyness" name="busyness">
+
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter description"></textarea>
+
+                <label for="requirements">Requirements</label>
+                <textarea id="requirements" placeholder="Enter requirements"></textarea>
+
+                <label for="results">Results</label>
+                <textarea id="results" placeholder="Enter results"></textarea>
+
+                <button type="submit">Add</button>
+            </article>
+        </form>
+    </section>
+
+</body>
+
+</html>
